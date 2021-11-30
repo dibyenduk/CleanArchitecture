@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Application Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")   
+</head>
+<body>
+    <!--Site Wrapper-->
+    <div id="site-wrapper">
+
+        <!--Main Content (SideBar NavBar and Main Body)-->
+        <section id="main" class="h-100" style="-webkit-transition: 250ms ease-in-out; transition: 250ms ease-in-out">
+            <!--Side Bar-->
+            <div id="site-menu" style="overflow-y:auto;">
+                <div>
+                    <ul class="nav nav-list w-100">
+                        <li class="menu-item w-100" id="AdministrationMenu">
+                            <h4 class="menu-item-header">Administration <span class="fa fa-cog float-right" aria-hidden="true"></span></h4>
+                            <ul class="menu-item-list">
+                                <li class="menu-sub-item" id="SecurityMenu">
+                                    <h6 class="menu-item-sub-header"><small><span class="submenu-twist-icon fa fa-chevron-down pull-left m-1"></span></small>Security</h6>
+                                    <ul class="submenu-item-list">
+                                        <li>
+                                            <a href="#">Link1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Link2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <header id="navBar" class="navbar navbar-expand navbar-custom flex-column flex-md-row  bg-custom fixed-top py-0">
+                <a class="nav-item" id="sidebarCollapse" style="background-color:transparent">
+                    <i class="nav-link fas fa-bars"></i>
+                </a>
+                <a class="navbar-brand" style="padding: 4px 0px 0px 10px;" href="/Home/Index">Brand</a>
+
+                <div class="navbar-nav-scroll">
+                    <ul class="navbar-nav bd-navbar-nav flex-row">
+                        <!-- Keep this as it is useful in responsive mode-->
+                        <li class="nav-item">
+                            <a class="nav-link " href="/Home/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Home/About">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link mr-md-3" href="#" id="userProfile">
+                            <span class="fa fa-user"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="userSettings">
+                        <span style="font-size: xx-small">
+                            Welcome, <a href='@Url.Action("Index", "UserSetting")'>Dibyendu</a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2" href="#" id="signOut">
+                            <span class="fas fa-sign-out-alt"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2" href="#" id="wiki">
+                            <span class="fas fa-question-circle"></span>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+            <!--Notification Panel-->
+            <div id="notify-container" class="col-12"></div>
+            <!-- Content -->
+            <div class="container-fluid">
+                @RenderBody()
+                @*<footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4"><small>Copyright © 2014-2017, DK. All rights reserved.</small></div>
+                        <div class="col-sm-8"><small class="float-right"><b>Build:</b> 0.0.0.1<b>Database:</b> localhost\MMM.MES.Database<b>Server:</b> W0181652<b>Language:</b> en-US</small></div>
+                    </div>
+                </div>
+            </footer>*@
+                <div class="footer">
+                    <div class="card">
+                        <div class="card-footer text-muted">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-4"><small>Copyright © XXXX-XXXX. All rights reserved.</small></div>
+                                    <div class="col-sm-8"><small class="float-right"><b>Build:</b> 0.0.0.1<b> Database:</b> localhost\Database<b> Server:</b> Server1<b> Language:</b> en-US</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/assets/app/scripts/vendor/select2/js/select2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#sidebarCollapse').on('click', function (e) {
+                e.preventDefault();
+                var siteWrapper = '#main', showNavClass = 'show-nav';
+
+                if ($(siteWrapper).hasClass(showNavClass)) {
+                    $(siteWrapper).removeClass(showNavClass);
+                } else {
+                    $(siteWrapper).addClass(showNavClass);
+                }
+            });
+        });
+    </script>
+    <script data-main='@VirtualPathUtility.ToAbsolute("~/assets/app/scripts/app.js")' src='@VirtualPathUtility.ToAbsolute("~/assets/app/scripts/vendor/require.js")'></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

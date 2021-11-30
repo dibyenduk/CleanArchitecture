@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "cdnjs",
+      "library": "require.js@2.3.6",
+      "destination": "assets/app/scripts/vendor/",
+      "files": [
+        "require.js",
+        "require.min.js",
+        "require.min.js.map"
+      ]
+    },
+    {
+      "provider": "filesystem",
+      "library": "..\\libmanpackages\\",
+      "destination": "assets/app/scripts/vendor/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "lodash.js@4.17.11",
+      "destination": "assets/app/scripts/vendor/",
+      "files": [
+        "lodash.js",
+        "lodash.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jqueryui@1.12.1",
+      "destination": "assets/app/scripts/vendor/",
+      "files": [
+        "jquery-ui.min.js",
+        "jquery-ui.js"
+      ]
+    },
+    {
+      "library": "select2@4.0.5",
+      "destination": "assets/app/scripts/vendor/select2/",
+      "files": [
+        "js/select2.js",
+        "js/select2.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "tempusdominus-bootstrap-4@5.1.2",
+      "destination": "assets/app/scripts/vendor/tempusdominus-bootstrap-4/",
+      "files": [
+        "js/tempusdominus-bootstrap-4.min.js",
+        "js/tempusdominus-bootstrap-4.js"
+      ]
+    }
+  ,
+{
+  "provider": "cdnjs",
+  "library": "moment.js@2.24.0",
+  "destination": "assets/app/scripts/vendor/moment.js/"
+}
+]
+}

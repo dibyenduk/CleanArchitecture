@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MES.WebUI", "MES.WebUI\MES.WebUI.csproj", "{E769D0F0-13E3-4030-8BF0-F5E202066980}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MES.Entities", "MES.Entities\MES.Entities.csproj", "{79895B46-67A2-43AB-8586-846824BF4132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MES.Core", "MES.Core\MES.Core.csproj", "{69FC8BDD-22F9-49C9-B93E-41E61FFCF708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MES.Persistence", "MES.Persistence\MES.Persistence.csproj", "{A4F53A4B-C244-4337-8B14-3B706716B7A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MES.Core.Tests", "MES.Core.Tests\MES.Core.Tests.csproj", "{A5939299-C908-4627-B97C-A7583622582D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{726A0E03-CC69-4137-99F7-A829283558C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A230D4C1-20CC-4FDF-B40E-B81DA92A1153}"
+	ProjectSection(SolutionItems) = preProject
+		000010.CreateTables_ProcessOrder.sql = 000010.CreateTables_ProcessOrder.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E769D0F0-13E3-4030-8BF0-F5E202066980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E769D0F0-13E3-4030-8BF0-F5E202066980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E769D0F0-13E3-4030-8BF0-F5E202066980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E769D0F0-13E3-4030-8BF0-F5E202066980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79895B46-67A2-43AB-8586-846824BF4132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79895B46-67A2-43AB-8586-846824BF4132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79895B46-67A2-43AB-8586-846824BF4132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79895B46-67A2-43AB-8586-846824BF4132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69FC8BDD-22F9-49C9-B93E-41E61FFCF708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69FC8BDD-22F9-49C9-B93E-41E61FFCF708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69FC8BDD-22F9-49C9-B93E-41E61FFCF708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69FC8BDD-22F9-49C9-B93E-41E61FFCF708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4F53A4B-C244-4337-8B14-3B706716B7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F53A4B-C244-4337-8B14-3B706716B7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F53A4B-C244-4337-8B14-3B706716B7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F53A4B-C244-4337-8B14-3B706716B7A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5939299-C908-4627-B97C-A7583622582D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5939299-C908-4627-B97C-A7583622582D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5939299-C908-4627-B97C-A7583622582D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5939299-C908-4627-B97C-A7583622582D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5939299-C908-4627-B97C-A7583622582D} = {726A0E03-CC69-4137-99F7-A829283558C6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A2F1641-D26C-4DC7-A820-3D48620698F4}
+	EndGlobalSection
+EndGlobal

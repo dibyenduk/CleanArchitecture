@@ -1,0 +1,39 @@
+﻿.modal-header {
+    font-weight: bold;
+    border-bottom: none;
+    padding: 20px 20px 0 20px;
+}
+
+.modal-header h4 {
+    font-size: 25px;
+    color: #000;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.4;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #d3d3d3;
+    padding-bottom: 5px;
+}
+
+.modal-header .close {
+    font-size: 35px;
+    margin-top: -15px;
+    margin-right: -10px;
+}
+
+.modal-dialog {
+    z-index: 3;
+}
+
+div.modal-backdrop {
+    z-index: 2;
+}
+
+.modal-footer {
+    border-top: none;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}

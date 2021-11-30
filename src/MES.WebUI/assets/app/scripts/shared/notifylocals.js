@@ -1,0 +1,47 @@
+﻿define(['Culture.NotifyLocals.locals'], function () {
+
+    return {
+        culture: 'en-Us',
+        userTimeZone: 'America/Chicago',
+        values: {
+            "noData": "No Records to display",
+            "dataError": "There was a problem retrieving your grid data",
+            "groupColumnText": "Drag a column header here to group by that column",
+            "columnChooserTitle": "Column Chooser",
+            "records": "Records",
+            "recordsSelected": "Records Selected",
+            "recordCount": "{0}-{1} of {2}",
+            "hideColumn": "Drag a column here to hide it",
+            "saveLayout": "Save grid layout",
+            "saveLayoutSuccess": "Saved the grid layout",
+            "saveLayoutFail": "Failed to save the grid layout",
+            "clearLayout": "Clear saved grid layout",
+            "clearLayoutSuccess": "Cleared the saved grid layout",
+            "clearLayoutFail": "Failed to clear the saved grid layout",
+            "bulkAction": "Bulk Action",
+            "exportAll": "Export",
+            "exportforLoftware": "Export Loftware Fields",
+            "actionHeader": "Actions",
+            "editLink": "Edit",
+            "addButton": "Add",
+            "syncButton": "Download",
+            "confirmDeleteTitleText": "Confirm Deletion",
+            "confirmDeleteMessageText": "Are you sure you want to delete this record?",
+            "confirmDeleteMessageForUserMaintenancePlant": "Deleting the Plant assignment would also delete work center assignments",
+            "editButtonToolTip": "Edit",
+            "detailButtonToolTip": "Details",
+            "deleteButtonToolTip": "Delete",
+            "associateButtonToolTip": "Associate",
+            "removeAssociationButtonToolTip": "Remove Association",
+            "importButton": "Import",
+            "importLoftwareButton": "Import Loftware Fields",
+            "importFinished": " Record(s) successfully imported",
+            "importInserted": "Import Grid", "recordDeletedSuccess": "Record deleted successfully",
+            "regulatoryMessage": "Note: U.S. Export Controlled information may be displayed and is subject to ITAR (International Traffic in Arms Regulations) or EAR (Export Administration Regulations) export controls. Consult with your export administrator before sharing with anyone.",
+            "InventoryAreaTypeDelete": "Inventory Area Type is deleted succesfully",
+            "RefrenceInventoryAreaTypeDelete": "Inventory Area is present for this Inventory area type",
+            "deleteLink": "Delete",
+            "loading": "Loading..."
+        }
+    };
+});

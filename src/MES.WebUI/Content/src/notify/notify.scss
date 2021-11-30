@@ -1,0 +1,35 @@
+﻿.notify-container {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    top: -1px;
+    padding: 0;
+}
+
+.alert {
+    opacity: 0.95;
+}
+
+.alert .alert-icon {
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px 10px 10px;
+}
+
+.alert ul {
+    list-style-type: none;
+}
+
+.alert > * {
+    padding-left: 55px;
+}
+
+.alert > ul {
+    padding: 1em 0 1em 55px;
+}
+
+.alert-sticky {
+    width: 100%;
+    top: -1px;
+    margin: 0;
+}

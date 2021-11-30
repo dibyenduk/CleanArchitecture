@@ -1,0 +1,96 @@
+﻿html {
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.red-border-bottom {
+    border-bottom: red solid 4px;
+}
+
+// Side Bar
+
+#site-menu {
+    width: 315px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -315px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: lighten($black, 20%);
+}
+
+.show-nav {
+    -webkit-transform: translateX(315px);
+    transform: translateX(315px);
+    -webkit-transform: translate3d(315px, 0, 0);
+    transform: translate3d(315px, 0, 0);
+    -webkit-transition: 250ms ease-in-out;
+    transition: 250ms ease-in-out;
+}
+
+
+.menu-item {
+    padding: 1em 1.25em;
+    border-bottom: 1px solid #999;
+    background: lighten($black, 20%);
+    list-style: none;
+}
+
+.menu-item .fa {
+    font-size: 1.5em;
+    text-align: center;
+    width: 22px;
+}
+
+.menu-item .menu-item-header {
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    color: #999;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-item .menu-item-sub-header {
+    padding: 8px 0 0 0;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item-list li {
+    padding: .5em 0 0 0;
+    font-size: 14px;
+}
+
+.submenu-item-list li {
+    padding: .5em 0 0 15px;
+    font-size: 14px;
+}
+
+.submenu-twist-icon {
+    color: white;
+}
+
+.menu-item-list a {
+    color: white;
+}
+
+// Footer
+.footer {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: solid 1px lighten($black, 93.5%);
+    
+}

@@ -1,0 +1,39 @@
+﻿#navBar {
+    font-size: 1.25em;
+}
+.navbar-custom {
+    background-color: $navbar-default-bg;
+    font-family: $font-family-sans-serif;
+    font-size: 1.5em;
+    border-bottom: 4px solid olivedrab;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: $navbar-default-color;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: $navbar-default-color;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: $brand-danger;
+}
+
+// this is a black icon with 50% opacity
+.navbar-custom .navbar-toggler-icon {
+    /*background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");*/
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: $body-bg;
+}
+
+#main {
+    padding-top: 70px;
+}
