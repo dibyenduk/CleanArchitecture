@@ -15,11 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MES.Core.Tests", "MES.Core.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{726A0E03-CC69-4137-99F7-A829283558C6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A230D4C1-20CC-4FDF-B40E-B81DA92A1153}"
-	ProjectSection(SolutionItems) = preProject
-		000010.CreateTables_ProcessOrder.sql = 000010.CreateTables_ProcessOrder.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
