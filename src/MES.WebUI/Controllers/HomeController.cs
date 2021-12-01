@@ -12,8 +12,8 @@ namespace MES.WebUI.Controllers
     {        
         public ActionResult Index()
         {
-            var response = Mediator.Send(new SearchQuery() { Id = 2 });
-            return View();
+            var response = Mediator.Send(new SearchQuery() { }).Result;
+            return View(response);
         }
 
         public ActionResult About()

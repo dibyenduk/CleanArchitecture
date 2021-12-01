@@ -29,7 +29,10 @@ namespace MES.Core.Features.ViewProcessOrder
 
         public Task<SearchResponse> Handle(SearchQuery request, CancellationToken cancellationToken)
         {
-            var query = this.dbContext.ProcessOrders.Where(t => t.Id == request.Id);
+            var query = this.dbContext.ProcessOrders.AsQueryable();
+
+            if (request.Id != 0)
+                query = query.Where(t => t.Id == request.Id);
 
             List<SearchResult> searchResults = query.Select(t => new SearchResult { 
                 Id = t.Id, 

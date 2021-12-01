@@ -14,7 +14,7 @@ namespace MES.Core.Features.ViewProcessOrder
     {
         public int Id { get; set; }
 
-        public string Nbr { get; set; }
+        public string Nbr { get; set; }        
 
         public DateTime CreatedDateTime { get; set; }
 
