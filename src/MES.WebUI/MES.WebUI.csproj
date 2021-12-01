@@ -539,6 +539,10 @@
       <Project>{a4f53a4b-c244-4337-8b14-3b706716b7a5}</Project>
       <Name>MES.Persistence</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MES.SAP\MES.SAP.csproj">
+      <Project>{a9aea021-4856-4bf4-9ac4-c5942a29c8c0}</Project>
+      <Name>MES.SAP</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

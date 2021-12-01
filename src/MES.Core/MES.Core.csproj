@@ -58,19 +58,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Inventory\GetDetailsHandler.cs" />
+    <Compile Include="Features\Inventory\GetDetailsQuery.cs" />
+    <Compile Include="Features\Inventory\GetDetailsResponse.cs" />
+    <Compile Include="Features\Inventory\GetDetailsValidator.cs" />
     <Compile Include="Features\ViewProcessOrder\SearchHandler.cs" />
     <Compile Include="Features\ViewProcessOrder\SearchQuery.cs" />
     <Compile Include="Features\ViewProcessOrder\SearchResponse.cs" />
     <Compile Include="Features\ViewProcessOrder\SearchValidator.cs" />
+    <Compile Include="Infrastructure\ILogService.cs" />
+    <Compile Include="Infrastructure\INotificationService.cs" />
     <Compile Include="Infrastructure\RequestContext.cs" />
     <Compile Include="Infrastructure\Validation\FluentValidationMessageValidator.cs" />
     <Compile Include="Infrastructure\Validation\IMessageValidator.cs" />
     <Compile Include="Infrastructure\Validation\ValidationProcessorBehavior.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Inventory\IInventoryService.cs" />
+    <Compile Include="Services\Inventory\Models\InventoryDetails.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\MES.Entities\MES.Entities.csproj">
       <Project>{79895b46-67a2-43ab-8586-846824bf4132}</Project>

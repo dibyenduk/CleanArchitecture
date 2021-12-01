@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using MES.Core.Infrastructure;
+using MES.Core.Services.Inventory;
 using MES.Persistence;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,13 +24,13 @@ namespace MES.Core.Features.ViewProcessOrder
 
         public SearchHandler(MESDbContext dbContext)
         {
-            this.dbContext = dbContext;            
+            this.dbContext = dbContext;
         }
 
         public Task<SearchResponse> Handle(SearchQuery request, CancellationToken cancellationToken)
         {
             var query = this.dbContext.ProcessOrders.Where(t => t.Id == request.Id);
-                        
+
             List<SearchResult> searchResults = query.Select(t => new SearchResult { 
                 Id = t.Id, 
                 Nbr = t.Nbr,

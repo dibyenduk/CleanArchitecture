@@ -22,7 +22,9 @@ namespace MES.WebUI.DependencyResolution {
     using MediatR.Pipeline;
     using MES.Core.Features.ViewProcessOrder;
     using MES.Core.Infrastructure.Validation;
+    using MES.Core.Services.Inventory;
     using MES.Persistence;
+    using MES.SAP.Services.Inventory;
     using StructureMap;
     using System.Configuration;
 
@@ -35,6 +37,7 @@ namespace MES.WebUI.DependencyResolution {
                 c.Scan(scanner =>
                 {
                     scanner.AssemblyContainingType<SearchQuery>(); // Our assembly with requests & handlers
+                    scanner.AssemblyContainingType<InventoryService>(); // Our assembly for SAP Services
                     scanner.ConnectImplementationsToTypesClosing(typeof(IRequestHandler<,>));
                     scanner.ConnectImplementationsToTypesClosing(typeof(INotificationHandler<>));
                     scanner.AddAllTypesOf(typeof(IRequestPreProcessor<>));
@@ -55,6 +58,9 @@ namespace MES.WebUI.DependencyResolution {
 
                 // Validation
                 c.For(typeof(IMessageValidator<>)).Use(typeof(FluentValidationMessageValidator<>));
+
+                // Services
+                c.For(typeof(IInventoryService)).Use(typeof(InventoryService));
             });
         }
     }

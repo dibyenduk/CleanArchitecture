@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="ProductionReporterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TestInventoryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MES.Core\MES.Core.csproj">
@@ -83,6 +84,10 @@
     <ProjectReference Include="..\MES.Persistence\MES.Persistence.csproj">
       <Project>{a4f53a4b-c244-4337-8b14-3b706716b7a5}</Project>
       <Name>MES.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MES.SAP\MES.SAP.csproj">
+      <Project>{a9aea021-4856-4bf4-9ac4-c5942a29c8c0}</Project>
+      <Name>MES.SAP</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
