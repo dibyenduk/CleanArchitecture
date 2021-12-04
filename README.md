@@ -5,7 +5,7 @@
 
 Clean Architecture is a book by author Robert Martin. It defines patterns to address function, component separation and data management by structuring classes and components within your code so that they are easy to change, maintain and deploy. 
 
-The source code in this repository is my take or attempt to implement the same.
+The source code in this [repository](https://github.com/dibyenduk/CleanArchitecture/tree/main/src) is my take or attempt to implement the same.
 
 Vertical Slice Architecture is another architecture by Jimmy Bogard. I had the opportunity to work with Jimmy on a project and learn about this architecture from him.
 
