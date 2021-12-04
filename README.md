@@ -22,7 +22,7 @@ Clean architecture suggests to divide the components in high level and low level
 
 ![](src/images/CleanArchitecture.jpg)
 
-Source - [Clean Architecture]()
+Source - [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
 ## Vertical Slice Architecture
 ---
