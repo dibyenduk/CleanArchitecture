@@ -50,7 +50,7 @@ One exception to this is the persistence layer. I took the decision early on to 
 
 All use cases are treated as individual requests. The requests are also aware about the response for the request. Handler handles the request and returns the response. Data validations are handled using Fluent validations. MediatR is used for routing the requests to the handlers. Retreiving or Saving data is handled using MES.Persistence and any other infrastructure elements are accessed through interfaces or abstractions.
 
-3. [MES.Persistance](https://github.com/dibyenduk/CleanArchitecture/tree/main/src/MES.Persistence) -
+3. [MES.Persistence](https://github.com/dibyenduk/CleanArchitecture/tree/main/src/MES.Persistence) -
 
 This project handles retrieving from and saving data in database. Configuration for the database is done on the UI or Test project. 
 
